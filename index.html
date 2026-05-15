@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Swagata Maji — B.Tech student at CVR University, Graphic Design Intern, Web Developer, and Researcher." />
+  <meta property="og:title" content="Swagata Maji — Portfolio" />
+  <meta property="og:description" content="Designer · Developer · Researcher" />
+  <meta property="og:image" content="pictures/me.jpg" />
+  <title>Swagata Maji's Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursor-dot"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">SM</div>
+    <ul class="nav-links">
+      <li><a href="#about"      class="nav-link">About</a></li>
+      <li><a href="#skills"     class="nav-link">Skills</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects"   class="nav-link">Projects</a></li>
+      <li><a href="#designs"   class="nav-link">Designs</a></li>
+      <li><a href="#achievements"   class="nav-link">Recognition</a></li>
+      <li><a href="#contact"    class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile nav -->
+  <div class="mobile-nav" id="mobile-nav">
+    <ul>
+      <li><a href="#about"      class="mob-link">About</a></li>
+      <li><a href="#skills"     class="mob-link">Skills</a></li>
+      <li><a href="#experience" class="mob-link">Experience</a></li>
+      <li><a href="#projects"   class="mob-link">Projects</a></li>
+      <li><a href="#designs"   class="mob-link">Designs</a></li>
+      <li><a href="#achievements"   class="mob-link">Recognition</a></li>
+      <li><a href="#contact"    class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-text" aria-hidden="true">SEEKER</div>
+    <div class="hero-content">
+      <div class="hero-left reveal">
+        <h1>
+          <span class="name-small">Hello, I'm</span>
+          <span class="name-big">Swagata Maji</span>
+          <!-- <span class="name-big italic">Swagata Maji</span> -->
+        </h1>
+        <p class="hero-role">Designer &bull; Developer &bull; Researcher</p>
+        <p class="hero-desc">
+          From insight to interface — I think, craft, and build
+          digital experiences with purpose.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">VIEW WORK</a>
+          <a href="#contact"  class="btn-ghost">Let's connect</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-n" data-target="9.35" data-decimal="2">0</span>
+            <span class="stat-l">CGPA</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-n" data-target="98.6" data-decimal="2">0</span>
+            <span class="stat-l">Matriculation</span>
+          </div> 
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-n" data-target="2" data-decimal="0">0</span>
+            <span class="stat-l">Internships</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-n" data-target="3" data-decimal="0">0</span>
+            <span class="stat-l">Major Project(s)</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-n" data-target="2" data-decimal="0">0</span>
+            <span class="stat-l">Mini Project(s)</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right reveal delay-2">
+        <div class="photo-wrapper">
+          <div class="photo-ring"></div>
+          <img src="pictures/me.jpg" alt="Swagata Maji" class="hero-photo" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <div class="section-label reveal">About me</div>
+      <h2 class="section-title reveal">Who I am</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>B.Tech student at <strong>C. V. Raman Global University (CGPA 9.35)</strong>, working at the intersection of design and technology — crafting visual identities and writing code with equal confidence.</p>
+          <p>Interned at <strong>InAmigos Foundation (Graphic Design)</strong> and <strong>Proxenix (Web Development)</strong>. Solved <strong>100+ problems on LeetCode, HackerRank, CodeChef & Codeforces</strong>. Certified in <strong>Google UX Design (Coursera)</strong>, <strong>Full Stack Java (Infosys SpringBoard)</strong>, and alumna of the <strong>McKinsey Forward Program</strong>.</p>
+          <p>Represented my team in <strong>Smart India Hackathon 2025</strong>, earned <strong>Google Cloud recognition</strong>, and participated in seminars and webinars on DSA, Gen AI, Agentic AI, and Full-Stack development.</p>
+          <p>Outside tech, I'm passionate about music, writing, and continuous learning — always chasing the next challenge.</p>
+          <div class="about-links">
+            <a href="mailto:majiswagata450@gmail.com" class="about-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+              majiswagata450@gmail.com
+            </a>
+            <a href="https://linkedin.com/in/swagata-maji-78029932b" target="_blank" class="about-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/Swagata191" target="_blank" class="about-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0112 6.8c.85.004 1.7.115 2.5.337 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0022 12c0-5.52-4.48-10-10-10z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      <div class="edu-cards reveal delay-1">
+          <div class="edu-card">
+            <div class="edu-info">
+              <div class="edu-title-row">
+                <strong>B.Tech in Computer Science (AI & ML)</strong>
+                <span class="edu-date">2023 – Present</span>
+              </div>
+              <p>C. V. Raman Global University, Bhubaneswar</p>
+            </div>
+            <div class="edu-footer">
+              <div class="edu-bar-wrap">
+                <div class="edu-bar" style="--bar-pct: 93.5%"></div>
+              </div>
+              <div class="edu-score-group">
+                <span class="score-label">CGPA</span>
+                <span class="score-value highlight">9.35</span>
+              </div>
+            </div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-info">
+              <div class="edu-title-row">
+                <strong>Post-Matriculation (Science)</strong>
+                <span class="edu-date">2022 – 2023</span>
+              </div>
+              <p>S. B. D International School, Odisha</p>
+            </div>
+            <div class="edu-footer">
+              <div class="edu-bar-wrap">
+                <div class="edu-bar" style="--bar-pct: 86.83%"></div>
+              </div>
+              <div class="edu-score-group">
+                <span class="score-label">Score</span>
+                <span class="score-value highlight">86.83%</span>
+              </div>
+            </div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-info">
+              <div class="edu-title-row">
+                <strong>Matriculation</strong>
+                <span class="edu-date">2020 – 2021</span>
+              </div>
+              <p>S. B. D International School, Odisha</p>
+            </div>
+            <div class="edu-footer">
+              <div class="edu-bar-wrap">
+                <div class="edu-bar" style="--bar-pct: 98.6%"></div>
+              </div>
+              <div class="edu-score-group">
+                <span class="score-label">Score</span>
+                <span class="score-value highlight">98.60%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark-section" id="skills">
+  <div class="section-inner">
+    <div class="section-label light reveal">Skills</div>
+    <h2 class="section-title light reveal">What I work with</h2>
+
+    <div class="skill-carousel-wrapper reveal">
+      <button class="carousel-btn prev" id="skillPrev">&#8249;</button>
+
+      <div class="skill-carousel" id="skillCarousel">
+
+        <div class="skill-card" data-index="0">
+          <div class="skill-card-top">
+            <span class="skill-card-icon">🎨</span>
+            <span class="skill-card-label">Design</span>
+          </div>
+          <ul class="skill-card-list">
+            <li>Visual Content Creation</li>
+            <li>Layout Design</li>
+            <li>Typography</li>
+            <li>Branding &amp; Brand Consistency</li>
+            <li>Presentation Design</li>
+            <li>Content Formatting</li>
+          </ul>
+          <div class="skill-card-footer">
+            <span class="skill-count">6 skills</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-index="1">
+          <div class="skill-card-top">
+            <span class="skill-card-icon">🛠️</span>
+            <span class="skill-card-label">Tools</span>
+          </div>
+          <ul class="skill-card-list">
+            <li>Adobe Photoshop</li>
+            <li>Figma</li>
+            <li>Microsoft PowerPoint</li>
+            <li>Google Slides</li>
+          </ul>
+          <div class="skill-card-footer">
+            <span class="skill-count">4 skills</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-index="2">
+          <div class="skill-card-top">
+            <span class="skill-card-icon">🧠</span>
+            <span class="skill-card-label">Core Skills</span>
+          </div>
+          <ul class="skill-card-list">
+            <li>Attention to Detail</li>
+            <li>Time Management</li>
+            <li>Team Collaboration</li>
+            <li>Effective Communication</li>
+          </ul>
+          <div class="skill-card-footer">
+            <span class="skill-count">4 skills</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-index="3">
+          <div class="skill-card-top">
+            <span class="skill-card-icon">💻</span>
+            <span class="skill-card-label">Technical</span>
+          </div>
+          <ul class="skill-card-list">
+            <li>Java</li>
+            <li>Python</li>
+            <li>C</li>
+            <li>SQL (Oracle, MySQL)</li>
+            <li>Google Cloud</li>
+            <li>Linux (Ubuntu, Peppermint OS)</li>
+          </ul>
+          <div class="skill-card-footer">
+            <span class="skill-count">6 skills</span>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-btn next" id="skillNext">&#8250;</button>
+    </div>
+
+    <!-- Dots -->
+    <div class="carousel-dots" id="carouselDots">
+      <span class="dot active" data-dot="0"></span>
+      <span class="dot" data-dot="1"></span>
+      <span class="dot" data-dot="2"></span>
+      <span class="dot" data-dot="3"></span>
+    </div>
+
+  </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="section-inner">
+      <div class="section-label reveal">Experience</div>
+      <h2 class="section-title reveal">Where I've worked</h2>
+
+      <div class="folder-grid">
+
+        <!-- ── InAmigos Folder ── -->
+        <div class="folder-wrap reveal">
+          <div class="folder" id="folder-1">
+
+            <!-- Folder body -->
+            <div class="folder-body">
+              <div class="folder-docs">
+                <div class="pocket-container">
+                  <div class="pocket">
+                    <div class="pocket-slot"></div>
+                    <img src="pictures/internships/Screenshot 2026-04-22 115843.png" class="cert-img" alt="Internship Certificate" data-index="0">
+                    <span class="pocket-label">Internship Certificate</span>
+                  </div>
+                  <div class="pocket">
+                    <div class="pocket-slot"></div>
+                    <img src="pictures/internships/Screenshot 2026-04-22 115813.png" class="cert-img" alt="Appreciation Certificate" data-index="1">
+                    <span class="pocket-label">Appreciation Certificate</span>
+                  </div>
+                  <div class="pocket">
+                    <div class="pocket-slot"></div>
+                    <img src="pictures/internships/Screenshot 2026-04-22 115934.png" class="cert-img" alt="LOR" data-index="2">
+                    <span class="pocket-label">Letter of Recommendation</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Info panel -->
+              <div class="folder-info">
+                <div class="finfo-meta">
+                  <span class="finfo-badge design-badge">Design</span>
+                  <span class="finfo-duration">Feb 2026 - Mar 2026</span>
+                </div>
+                <h3 class="finfo-title">Graphic Design Intern</h3>
+                <p class="finfo-company">InAmigos Foundation</p>
+                <ul class="finfo-list">
+                  <li>Designed digital assets — social media creatives, banners &amp; campaign materials</li>
+                  <li>Maintained brand consistency across all visual communications</li>
+                </ul>
+                <div class="finfo-tags">
+                  <span class="finfo-tag">Photoshop</span>
+                  <span class="finfo-tag">Branding</span>
+                  <span class="finfo-tag">Social Media</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Proxenix Folder ── -->
+        <div class="folder-wrap reveal">
+          <div class="folder" id="folder-2">
+            
+            <div class="folder-body">
+
+              <div class="folder-docs">
+                <div class="pocket-container">
+                  <div class="pocket">
+                    <div class="pocket-slot"></div>
+                    <img src="pictures/internships/Proxenix internship offer letter.jpg" class="cert-img" alt="Offer Letter" data-index="0">
+                    <span class="pocket-label">Offer Letter</span>
+                  </div>
+                  <div class="pocket">
+                    <div class="pocket-slot"></div>
+                    <img src="pictures/internships/Internship Completion Certificate.jpg" class="cert-img" alt="Course Certificate" data-index="1">
+                    <span class="pocket-label">Course Certificate</span>
+                  </div>
+                  <div class="pocket">
+                    <div class="pocket-slot"></div>
+                    <img src="pictures/internships/Course Completion Certificate.jpg" class="cert-img" alt="Internship Certificate" data-index="2">
+                    <span class="pocket-label">Internship Certificate</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="folder-info">
+                <div class="finfo-meta">
+                  <span class="finfo-badge dev-badge">Dev</span>
+                  <span class="finfo-duration">Jun 2025 - Jul 2025</span>
+                </div>
+                <h3 class="finfo-title">Web Development Intern</h3>
+                <p class="finfo-company">Proxenix</p>
+                <ul class="finfo-list">
+                  <li>Collaborated with a team to deliver user-focused web solutions</li>
+                  <li>Contributed to UI structuring and content presentation for improved usability</li>
+                  <li>Ensured timely delivery of milestones through effective coordination</li>
+                </ul>
+                <div class="finfo-tags">
+                  <span class="finfo-tag">HTML/CSS</span>
+                  <span class="finfo-tag">UI Design</span>
+                  <span class="finfo-tag">Team Work</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" id="lightboxClose">✕</button>
+      
+      <div class="lightbox-content">
+        <img class="lightbox-img" id="lightboxImg" src="" alt="Certificate View" />
+      </div>
+  
+      <div class="lightbox-toolbar">
+        <button class="lightbox-btn" id="lightboxPrev">‹</button>
+        <span class="lightbox-counter" id="lightboxCounter">1 / 3</span>
+        <button class="lightbox-btn" id="lightboxNext">›</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <section class="section teal-section" id="projects">
+  <div class="section-inner">
+    <div class="section-label light reveal">Projects</div>
+    <h2 class="section-title light reveal">What I've built</h2>
+
+    <!-- Major Projects Section -->
+    <h3 class="projects-subtitle reveal">Major Projects</h3>
+    <div class="projects-grid grid-3">
+      
+      <!-- Project 01: Aapda Mitra -->
+      <div class="project-card reveal">
+        <div class="project-header">
+          <span class="project-num">01</span>
+          <div class="project-tags">
+            <span class="ptag">Next.js</span>
+            <span class="ptag">Firebase</span>
+            <span class="ptag">SOS</span>
+          </div>
+        </div>
+
+        <h3 class="project-title">Aapda Mitra: Disaster Response Hub</h3>
+        <p class="project-desc">A comprehensive disaster management platform providing real-time SOS alerts, resource tracking, and community assistance. Designed to bridge the communication gap during critical emergencies.</p>
+        <div class="project-footer">
+          <span class="project-tech">React · Firebase · Google Maps API</span>
+          <a href="https://github.com/Swagata191/Aapda-Mitra.git" target="_blank" class="project-link">VIEW</a>
+        </div>
+      </div>
+
+      <!-- Project 02: Analytical System -->
+      <div class="project-card reveal delay-1">
+        <div class="project-header">
+          <span class="project-num">02</span>
+          <div class="project-tags">
+            <span class="ptag">Data</span>
+            <span class="ptag">Analytics</span>
+          </div>
+        </div>
+
+        <h3 class="project-title">Feedback Collection &amp; Analytical System</h3>
+        <p class="project-desc">Created structured layouts for efficient data visualization and reporting. Defines a project that keeps track of resolved and pending issues of customers. Focused on clarity, readability, and organized presentation of analytical insights.</p>
+        <div class="project-footer">
+          <span class="project-tech">SQL · Python · Layout Design</span>
+          <a href="https://github.com/Swagata191/Feedback-Collection-System.git" target="_blank" class="project-link">VIEW</a>
+        </div>
+      </div>
+
+      <!-- Project 03: Schat -->
+      <div class="project-card reveal">
+        <div class="project-header">
+          <span class="project-num">03</span>
+          <div class="project-tags">
+            <span class="ptag">Socket.io</span>
+            <span class="ptag">Node.js</span>
+            <span class="ptag">Fullstack</span>
+          </div>
+        </div>
+
+        <h3 class="project-title">Schat: Real-time Communication App</h3>
+        <p class="project-desc">A user-friendly scalable chat application featuring instant message delivery, room-based communication, and active user tracking. Built with a focus on low-latency data synchronization and responsive UI design.</p>
+        <div class="project-footer">
+          <span class="project-tech">Socket.io · Express · MongoDB</span>
+          <a href="https://github.com/Swagata191/Real-time-Chat-Application.git" target="_blank" class="project-link">VIEW</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Minor Projects Section -->
+    <h3 class="projects-subtitle reveal">Self Projects</h3>
+    <div class="projects-grid grid-2">
+      
+      <!-- Project 01: Voya AI -->
+      <div class="project-card reveal">
+        <div class="project-header">
+          <span class="project-num">01</span>
+          <div class="project-tags">
+            <span class="ptag">GCP</span>
+            <span class="ptag">AI</span>
+            <span class="ptag">Design</span>
+          </div>
+        </div>
+
+        <h3 class="project-title">Voya AI: Intelligent Wildlife Registry</h3>
+        <p class="project-desc">Designed structured layouts to enhance accessibility and presentation of complex wildlife data. Improved user engagement through clear and organized interface design powered by GCP &amp; AI.</p>
+        <div class="project-footer">
+          <span class="project-tech">GCP · AI · UI Design</span>
+          <a href="https://github.com/Swagata191/Voya-AI.git" target="_blank" class="project-link">VIEW</a>
+        </div>
+      </div>
+
+      <!-- Project 02: ClipShot -->
+      <div class="project-card reveal">
+        <div class="project-header">
+          <span class="project-num">02</span>
+          <div class="project-tags">
+            <span class="ptag">Python</span>
+            <span class="ptag">OpenCV</span>
+            <span class="ptag">Automation</span>
+          </div>
+        </div>
+
+        <h3 class="project-title">ClipShot: Efficient Video Processor</h3>
+        <p class="project-desc">An automated tool designed for efficient video processing and snapshot generation. Streamlines media workflows by utilizing computer vision to detect key frames and automate clipping tasks.</p>
+        <div class="project-footer">
+          <span class="project-tech">Python · OpenCV · MoviePy</span>
+          <a href="https://github.com/Swagata191/ClipShot.git" target="_blank" class="project-link">VIEW</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- DESIGNS -->
+  <section class="section" id="designs">
+  <div class="section-inner">
+    <div class="section-label reveal">Designs</div>
+    <h2 class="section-title reveal">The Visual Creations Cubicle</h2>
+
+    <div class="poster-strip">
+      <div class="poster-track">
+        <div class="poster"><img src="pictures/projects/Poster 1 (1).jpg" alt="Poster 1"></div>
+        <div class="poster"><img src="pictures/projects/Poster 2 (1).jpg" alt="Poster 2"></div>
+        <div class="poster"><img src="pictures/projects/Poster 3 (1).jpg" alt="Poster 3"></div>
+        <div class="poster"><img src="pictures/projects/Poster 4.jpg" alt="Poster 4"></div>
+        <div class="poster"><img src="pictures/projects/Poster 5.jpg" alt="Poster 5"></div>
+        <div class="poster"><img src="pictures/projects/Poster 6.jpg" alt="Poster 6"></div>
+        <div class="poster"><img src="pictures/projects/Poster 7.jpg" alt="Poster 7"></div>
+        <div class="poster"><img src="pictures/projects/Poster 8 (1).png" alt="Poster 8"></div>
+        <div class="poster"><img src="pictures/projects/Poster 1 (1).jpg" alt="Poster 1"></div>
+        <div class="poster"><img src="pictures/projects/Poster 2 (1).jpg" alt="Poster 2"></div>
+        <div class="poster"><img src="pictures/projects/Poster 3 (1).jpg" alt="Poster 3"></div>
+        <div class="poster"><img src="pictures/projects/Poster 4.jpg" alt="Poster 4"></div>
+        <div class="poster"><img src="pictures/projects/Poster 5.jpg" alt="Poster 5"></div>
+        <div class="poster"><img src="pictures/projects/Poster 6.jpg" alt="Poster 6"></div>
+        <div class="poster"><img src="pictures/projects/Poster 7.jpg" alt="Poster 7"></div>
+        <div class="poster"><img src="pictures/projects/Poster 8 (1).png" alt="Poster 8"></div>
+      </div>
+    </div>
+  </div> 
+  
+  <!-- Audience image outside section-inner so it can go full width -->
+  <div class="audience-banner">
+    <img src="pictures/new pic(1).png" alt="audience view">
+  </div>
+</section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="section" id="achievements">
+    <div class="section-inner">
+      <div class="section-label reveal">Recognition</div>
+      <h2 class="section-title reveal">Certifications &amp; Achievements</h2>
+      
+      <div class="achievements-gallery-wall">
+        <div class="ach-card-item reveal">
+          <div class="ach-card-frame">
+            <img src="pictures/achievements/SIH 2025 Certificate (internal round selection).png" alt="Smart India Hackathon">
+            <div class="ach-frame-overlay"></div>
+          </div>
+        </div>
+  
+        <div class="ach-card-item reveal delay-1">
+          <div class="ach-card-frame">
+            <img src="pictures/achievements/Screenshot 2026-05-11 002356.png" alt="Google Cloud Achievement">
+            <div class="ach-frame-overlay"></div>
+          </div>
+        </div>
+  
+        <div class="ach-card-item reveal delay-2">
+          <div class="ach-card-frame">
+            <img src="pictures/achievements/Screenshot 2026-05-11 002931.png" alt="Accenture Go for Gold">
+            <div class="ach-frame-overlay"></div>
+          </div>
+        </div>
+  
+        <div class="ach-card-item reveal delay-1">
+          <div class="ach-card-frame">
+            <img src="pictures/achievements/CTS Onboard Edition.jpeg" alt="Google Cloud Achievement">
+            <div class="ach-frame-overlay"></div>
+          </div>
+        </div>
+  
+        <div class="ach-card-item reveal delay-1">
+          <div class="ach-card-frame">
+            <img src="pictures/achievements/CTS AI in Action.jpeg" alt="Google Cloud Achievement">
+            <div class="ach-frame-overlay"></div>
+          </div>
+        </div>
+  
+        <div class="ach-card-item reveal delay-2">
+          <div class="ach-card-frame">
+            <img src="pictures/achievements/SI.jpeg" alt="Smart Interviews">
+            <div class="ach-frame-overlay"></div>
+          </div>
+        </div>
+  
+        <div class="ach-card-item reveal delay-2">
+          <div class="ach-card-frame">
+            <img src="pictures/achievements/AlgoUniversity Graph camp.jpeg" alt="AlgoUniversity">
+            <div class="ach-frame-overlay"></div>
+          </div>
+        </div>
+  
+        <div class="ach-card-item reveal delay-2">
+          <div class="ach-card-frame">
+            <img src="pictures/achievements/AlgoUniversity DP camp.png" alt="AlgoUniversity">
+            <div class="ach-frame-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    
+  <!-- CONTACT -->
+  <section class="section dark-section" id="contact">
+    <div class="section-inner contact-inner">
+      <div class="section-label light reveal">Contact</div>
+      <h2 class="section-title light reveal">Let's work together</h2>
+      <p class="contact-sub reveal">I'm open to internships, design work, and full-time opportunities. Drop me a message — I read every email.</p>
+      <form class="contact-form reveal" id="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Rahul Sharma" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your email</label>
+            <input type="email" id="email" name="email" placeholder="rahul@example.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Internship / Freelance / Collaboration" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Hi Swagata, I'd love to work with you on..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary submit-btn">Send message →</button>
+        <p class="form-note" id="form-note"></p>
+      </form>
+      <div class="contact-links reveal delay-2">
+        <a href="mailto:majiswagata450@gmail.com" class="clink">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/swagata-maji-78029932b" target="_blank" class="clink">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/Swagata191" target="_blank" class="clink">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0112 6.8c.85.004 1.7.115 2.5.337 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0022 12c0-5.52-4.48-10-10-10z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/swagata.maji_05/profilecard/?igsh=MWs0bjRpNG82dG4wbw==" target="_blank" class="clink">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"></path> <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"></path></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Designed &amp; built by <strong>Swagata Maji</strong> · Bhubaneswar, Odisha · 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
