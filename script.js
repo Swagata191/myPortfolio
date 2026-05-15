@@ -262,19 +262,7 @@ function handleSubmit(e) {
   note.className   = 'form-note';
   note.textContent = '';
 
-  // Simulate send (replace with real API/EmailJS call)
-  // setTimeout(() => {
-  //   note.textContent = `Thanks ${name}! Your message has been sent. Swagata will get back to you soon.`;
-  //   note.className   = 'form-note success';
-  //   btn.textContent  = 'Message sent ✓';
-  //   e.target.reset();
-  //   setTimeout(() => {
-  //     btn.disabled    = false;
-  //     btn.textContent = 'Send message →';
-  //   }, 4000);
-  // }, 1200);
-  // In script.js, replace the setTimeout block with:
-  emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+  emailjs.send("service_ijtgauk", "template_dj3u2qn", {
     from_name: document.getElementById('name').value.trim(),
     from_email: document.getElementById('email').value.trim(),
     subject: document.getElementById('subject').value.trim(),
