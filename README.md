@@ -65,16 +65,16 @@ The portfolio is a deliberate design artefact in itself — every section, inter
 ## 🎨 Design Decisions
 
 **Typography — Cormorant Garamond + Outfit**
-Cormorant Garamond (display) brings editorial authority and warmth giving a "creative professional" effect while Outfit (body/UI) pairs cleanly without competing. 
+- Cormorant Garamond (display) brings editorial authority and warmth giving a "creative professional" effect while Outfit (body/UI) pairs cleanly without competing. 
 
 **Colour — Teal + Magenta on Dark Navy**
-The dark navy base (`#0a1628`) reads as serious and focused. Teal (`#00897b`) is the primary action colour — it signals "designer" without the over-used purple/indigo of most dev portfolios. Magenta (`#d4006e`) is used sparingly as an accent, only for role labels and active states.
+- The dark navy base (`#0a1628`) reads as serious and focused. Teal (`#00897b`) is the primary action colour — it signals "designer" without the over-used purple/indigo of most dev portfolios. Magenta (`#d4006e`) is used sparingly as an accent, only for role labels and active states.
 
 **Section transitions — dark → light → dark**
-The alternating light/dark section backgrounds create a contrast in section changes, depicting a designer's ability to balance a dark intense depth alongside a light-colored cheerful & happy feel. There is also an ironic use given to the implementation of the dark sections in a lighter way which is far different from the light sections carrying themselves in a radiant way.
+- The alternating light/dark section backgrounds create a contrast in section changes, depicting a designer's ability to balance a dark intense depth alongside a light-colored cheerful & happy feel. There is also an ironic use given to the implementation of the dark sections in a lighter way which is far different from the light sections carrying themselves in a radiant way.
 
 **Interactions — no animation library**
-Every animation (scroll-reveal, counters, carousel, parallax) is written in vanilla JS using `IntersectionObserver` and `requestAnimationFrame`. This keeps the bundle at 0 dependencies and demonstrates my understanding of animations.
+- Every animation (scroll-reveal, counters, carousel, parallax) is written in vanilla JS using `IntersectionObserver` and `requestAnimationFrame`. This keeps the bundle at 0 dependencies and demonstrates my understanding of animations.
 
 ---
 
@@ -92,6 +92,6 @@ You're welcome to draw inspiration from the code — but please don't copy the c
 
 ---
 
-**Designed & built by Swagata Maji · Bhubaneswar, Odisha · 2026**
+**Designed & built by Swagata Maji · Bhubaneswar, Odisha**
 
 *If you're a recruiter or collaborator reading this — Hello! Feel free to reach out at [majiswagata450@gmail.com](mailto:majiswagata450@gmail.com)*
