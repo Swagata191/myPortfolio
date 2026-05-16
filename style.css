@@ -331,21 +331,18 @@ h1 { line-height: 1; }
     min-height: 100vh;          
     min-height: 100svh;         
   }
-
+  .hero-bg-text { display: none; } 
   .hero-content {
     padding-top: 7rem;          
     padding-bottom: 3rem;
     gap: 2rem;
   }
-
   .hero-desc {
     max-width: 100%;
   }
-
   .hero-cta {
     justify-content: center;
   }
-
   .hero-stats {
     justify-content: center;
     flex-wrap: wrap;
@@ -357,16 +354,12 @@ h1 { line-height: 1; }
     padding-top: 6rem;
     padding-bottom: 2rem;
   }
-
   .name-big {
     font-size: clamp(2.8rem, 11vw, 4rem);
   }
-
   .hero-role  { font-size: 0.85rem; }
   .hero-desc  { font-size: 0.9rem; }
-
   .stat-divider { display: none; }
-
   .btn-primary,
   .btn-ghost {
     padding: 0.75rem 1.5rem;
