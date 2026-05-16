@@ -18,13 +18,20 @@
   --font-body:    'Outfit', sans-serif;
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 body {
   font-family: var(--font-body);
   background: var(--cream);
   color: var(--dark);
-  overflow-x: hidden;
   cursor: none;
 }
 
@@ -1424,10 +1431,16 @@ footer {
 footer strong { color: #6B7280; }
 
 /* ── Responsive ── */
+/* ── Responsive ── */
 @media (max-width: 900px) {
-  .hero-content  { grid-template-columns: 1fr; text-align: center; }
+  .hero-content  { grid-template-columns: 1fr; text-align: center; padding-top: 7rem; padding-bottom: 3rem; gap: 2rem; }
   .hero-left     { display: flex; flex-direction: column; align-items: center; }
   .hero-right    { display: none; }
+  .hero-bg-text  { display: none; }
+  .hero-desc     { max-width: 100%; }
+  .hero-cta      { justify-content: center; }
+  .hero-stats    { justify-content: center; flex-wrap: wrap; gap: 1rem; }
+  .hero          { padding: 0 1.5rem; min-height: 100vh; min-height: 100svh; }
   .about-grid    { grid-template-columns: 1fr; }
   .projects-grid { grid-template-columns: 1fr; }
   .achievements-grid { grid-template-columns: 1fr; }
@@ -1436,9 +1449,35 @@ footer strong { color: #6B7280; }
   .hamburger     { display: flex; }
   .section       { padding: 5rem 1.5rem; }
   .form-row      { grid-template-columns: 1fr; }
-  .hero          { padding: 0 1.5rem; }
 }
+
 @media (max-width: 600px) {
-  .hero-stats { gap: 1.2rem; }
-  .stat-n     { font-size: 1.5rem; }
+  .name-big      { font-size: clamp(2.8rem, 11vw, 4rem); }
+  .hero-role     { font-size: 0.85rem; }
+  .hero-desc     { font-size: 0.9rem; }
+  .hero-stats    { gap: 0.8rem; }
+  .stat-n        { font-size: 1.4rem; }
+  .stat-divider  { display: none; }
+  .btn-primary,
+  .btn-ghost     { padding: 0.75rem 1.5rem; font-size: 0.85rem; }
+}
+
+section {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .skill-card[data-pos="left2"],
+  .skill-card[data-pos="right2"] {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  
+  .skill-card {
+    max-width: 85vw;
+  }
 }
